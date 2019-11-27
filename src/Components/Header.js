@@ -1,7 +1,11 @@
 import React from "react";
 
 function Header() {
-  return <h1>This is where the header goes</h1>;
+  return (
+    <header>
+        <p>Meme Generator</p>
+    </header>
+    );
 }
 
 export default Header;
