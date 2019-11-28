@@ -2,11 +2,11 @@
 
 A starter React project that lets you generates your favorite funny memes!
 
-## Installation
+#### Installation Dependencies
 
 In your terminal install react by running ```npx create-react-app [name of your app]```.
 
-Then navigate to the project directory and run ```yarn start``` which runs the app in the development mode and supplies the necessary packages. Your website will automatically be loaded for you to view in the browser.
+Then navigate to the project directory and run ```yarn start``` which runs the app in the development mode. Your website will automatically be loaded for you to view in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
@@ -19,6 +19,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Meme Generator API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The meme generator [API](https://api.imgflip.com/) is a free open source API. It uses the ```$.json 'GET' method```. 
+
+In React, I used the ```componentDidMount``` method which uses `fetch` to load data from a remote endpoint:
+
+```javascript
+componentDidMount() {
+    fetch('https://api.imgflip.com/get_memes')
+}
+```
