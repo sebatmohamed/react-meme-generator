@@ -53,13 +53,23 @@ body {
 }
 
 header {
-    height: 100px;
-    text-align: center;
-    background: cornflowerblue;
+    height: 125px;
+	background: cornflowerblue;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 header > p {
-    font-size: 50px;
+	font-size: 100px;
+	margin-left: -200px;
+	color: white;
+	align-self: center;
+}
+
+header > img {
+	width: 125px;
+	height: 100px;
+	align-self: center;
 }
 
 .meme-form {
@@ -78,7 +88,7 @@ header > p {
     border: none;
     font-size: 25px;
     letter-spacing: 1.5px;
-    color: white;
+    color: black;
     background: cornflowerblue;
 }
 
@@ -92,7 +102,9 @@ header > p {
 
 .meme > img {
 	position: relative;
-	width: 50%;
+	width: 40%;
+	margin-left: 60px;
+	margin-top: -20px;
 }
 
 .meme > h2 {
@@ -101,6 +113,24 @@ header > p {
 	text-transform: uppercase;
 	color: white;
 	width: 80%;
+	left: 50%;
+	transform: translateX(-80%);
+    margin: 25px 0;
+	padding: 0 5px;
+	font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
 }
 
 .meme > .top {
@@ -113,10 +143,23 @@ header > p {
 
 footer {
     height: 100px;
-    text-align: center;
-    background: cornflowerblue;
+	background: cornflowerblue;
+	display: flex;
+	justify-content: space-evenly;
+	color: white;
 }
 
 footer > p {
-    font-size: 50px;
+	font-size: 25px;
+	align-self: center;
+}
+
+footer > ul {
+	font-size: 20px;
+	align-self: center;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
 }
